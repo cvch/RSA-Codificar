@@ -420,8 +420,22 @@ export default function App() {
         <ConsolePanel lines={consola} />
       </section>
 
-      <footer className="text-center text-gray-600 text-xs mt-10">
-        RSA Visual Lab · Hecho con React + FastAPI
+      <footer className="text-center mt-16 pb-10 border-t border-gray-800/50 pt-8">
+        <div className="flex flex-col items-center gap-2">
+          <p className="text-gray-400 text-sm font-medium">
+            Autores: <span className="text-cyan-300">Arley Montaña Fiaga</span> & <span className="text-cyan-300">Camilo Velasco Chaves</span>
+          </p>
+          <div className="flex items-center gap-3 text-[10px] uppercase tracking-[0.2em] text-gray-500 font-bold">
+            <span>Asignatura: Seguridad</span>
+            <span className="w-1 h-1 rounded-full bg-gray-700" />
+            <span>Especialización AES</span>
+            <span className="w-1 h-1 rounded-full bg-gray-700" />
+            <span>Pontificia Universidad Javeriana</span>
+          </div>
+          <p className="text-gray-600 text-[10px] mt-4">
+            RSA Visual Lab · {new Date().getFullYear()}
+          </p>
+        </div>
       </footer>
     </div>
   );
